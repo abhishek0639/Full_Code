@@ -1,4 +1,4 @@
-/churn_model.pkl
-/columns.pkl
+backend/churn_model.pkl
+backend/columns.pkl
 
 frontend/churn-ui/package.json
