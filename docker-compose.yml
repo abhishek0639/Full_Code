@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+
+  backend:
+    image: abhishek0669/churn-backend:latest
+    container_name: churn-backend
+    ports:
+      - "8000:8000"
+    restart: always
+
+  frontend:
+    image: abhishek0669/churn-frontend:latest
+    container_name: churn-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: always
